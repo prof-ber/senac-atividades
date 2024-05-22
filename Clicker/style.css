@@ -1,0 +1,33 @@
+
+:root {
+    --primary-color: #112D4E;
+    --secondary-color: #3F72AF;
+    --tertiary-color: #DBE2EF;
+    --quaternary-color: #F9F7F7;
+  }
+
+body{
+    background-color: var(--quaternary-color);
+}
+
+#Cookie{
+  background-color: transparent;
+  border: 0px;
+  font-size: 100px;
+}
+
+#Cookie:hover{
+  animation: growShrink 0.5s infinite alternate;
+}
+
+@keyframes growShrink {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: lightblue;
+  }
+}
